@@ -1,66 +1,113 @@
-const PRODUCTS = [
-  { name: "Замок врезной Punto LOCKSET25.ORION.5558-1 AB", cat: "Замки", price: 54, img: "img/p01.webp" },
-  { name: "Ручки дверные Code Deco Fusion H-100154-A-BLM", cat: "Ручки", price: 62.5, img: "img/p02.webp" },
-  { name: "Задвижка накладная СИ ЗТ-150 (черный)", cat: "Замки", price: 12.8, img: "img/p03.webp" },
-  { name: "Доводчик дверной Vela DC-45-BL (черный)", cat: "Доводчики", price: 79, img: "img/p04.webp" },
-  { name: "Ручки дверные Vela Steel Поло (черный)", cat: "Ручки", price: 45, img: "img/p05.webp" },
-  { name: "Ручки дверные VSTE Амата (матовый никель)", cat: "Ручки", price: 49.9, img: "img/p06.webp" },
-  { name: "Ручки дверные VSTE Арко (матовое золото)", cat: "Ручки", price: 114, img: "img/p07.webp" },
-  { name: "Петля скрытой установки Vela 110×30-2.2 MSN", cat: "Петли", price: 49, img: "img/p08.webp" },
-  { name: "Ручки дверные VSTE Арко (черный)", cat: "Ручки", price: 99, img: "img/p09.webp" },
-  { name: "Петля скрытой установки Vela Satin Gold", cat: "Петли", price: 49, img: "img/p10.webp" },
-  { name: "Накладка декоративная Apecs DP-14-S-G", cat: "Замки", price: 4, img: "img/p11.webp" },
-  { name: "Петля врезная Apecs 100×70-B-Steel", cat: "Петли", price: 6, img: "img/p12.webp" },
-  { name: "Ручки-купе Итарос для раздвижных дверей", cat: "Ручки", price: 13, img: "img/p13.webp" },
-  { name: "Замок врезной Vettore 5523-4-CR (хром)", cat: "Замки", price: 44, img: "img/p15.webp" },
-  { name: "Ручки дверные Vela Prima Комета BL", cat: "Ручки", price: 45, img: "img/p16.webp" },
-  { name: "Доводчик дверной Apecs DC-340", cat: "Доводчики", price: 95, img: "img/p20.webp" }
-];
-
-const list = document.getElementById("list");
-const count = document.getElementById("count");
+const PAGE = 24;
 const phone = "tel:+375296981184";
 const tg = "https://t.me/BudnyakDA";
-let current = "all";
+
+let products = [];
+let categories = [];
+let cat = "all";
+let query = "";
+let page = 1;
+
+const listEl = document.getElementById("list");
+const catsEl = document.getElementById("cats");
+const countEl = document.getElementById("count");
+const pagerEl = document.getElementById("pager");
+const qEl = document.getElementById("q");
+
+function money(n) {
+  const x = Number(n);
+  if (!Number.isFinite(x)) return "цена по запросу";
+  return x.toFixed(2).replace(".", ",") + " BYN";
+}
+
+function filtered() {
+  const q = query.trim().toLowerCase();
+  return products.filter(p => {
+    if (cat !== "all" && p.category !== cat) return false;
+    if (!q) return true;
+    return (p.name || "").toLowerCase().includes(q) ||
+      String(p.article || "").toLowerCase().includes(q) ||
+      String(p.id).includes(q);
+  });
+}
+
+function renderCats() {
+  const total = products.length;
+  const items = [{ name: "Все товары", slug: "all", count: total }, ...categories];
+  catsEl.innerHTML = items.map(c => {
+    const active = (c.slug === "all" ? cat === "all" : cat === c.name) ? " is-active" : "";
+    const key = c.slug === "all" ? "all" : c.name;
+    return `<button type="button" class="cat-btn${active}" data-cat="${key.replace(/"/g, "&quot;")}">${c.name}<span>${c.count}</span></button>`;
+  }).join("");
+  catsEl.querySelectorAll(".cat-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      cat = btn.dataset.cat;
+      page = 1;
+      render();
+    });
+  });
+}
 
 function card(p) {
-  const price = Number(p.price).toFixed(2);
-  return `<article class="card" data-cat="${p.cat}">
-    <a class="img" href="${phone}" aria-label="Заказать ${p.name}">
-      <img src="${p.img}" alt="${p.name}" loading="lazy" width="280" height="280">
+  const href = p.url || "#contacts";
+  return `<article class="card">
+    <a class="img" href="${href}" target="_blank" rel="noopener">
+      <img src="${p.image}" alt="${p.name.replace(/"/g, "&quot;")}" loading="lazy" width="240" height="240">
     </a>
-    <small>${p.cat}</small>
-    <h3>${p.name}</h3>
+    <small>${p.category || ""}</small>
+    <h3><a href="${href}" target="_blank" rel="noopener">${p.name}</a></h3>
     <div class="row">
-      <b>${price} BYN</b>
+      <b>${money(p.price)}</b>
       <a class="btn sm" href="${phone}">Заказать</a>
     </div>
-    <a class="link" href="${tg}" target="_blank" rel="noopener">Написать в Telegram</a>
+    <div class="links">
+      <a href="${href}" target="_blank" rel="noopener">Описание товара</a>
+      <a href="${tg}" target="_blank" rel="noopener">Telegram</a>
+    </div>
   </article>`;
 }
 
-function render(cat) {
-  current = cat;
-  const items = cat === "all" ? PRODUCTS : PRODUCTS.filter(p => p.cat === cat);
-  list.innerHTML = items.map(card).join("");
-  count.textContent = items.length
-    ? `Показано: ${items.length} из ${PRODUCTS.length}`
-    : "В этой категории пока пусто — напишите, подберём под заказ.";
-  document.querySelectorAll(".filter").forEach(btn => {
-    btn.classList.toggle("is-active", btn.dataset.cat === cat);
+function renderPager(totalPages) {
+  if (totalPages <= 1) { pagerEl.innerHTML = ""; return; }
+  let html = "";
+  if (page > 1) html += `<button type="button" data-p="${page - 1}">← Назад</button>`;
+  html += `<span>${page} / ${totalPages}</span>`;
+  if (page < totalPages) html += `<button type="button" data-p="${page + 1}">Вперёд →</button>`;
+  pagerEl.innerHTML = html;
+  pagerEl.querySelectorAll("button").forEach(b => {
+    b.addEventListener("click", () => {
+      page = Number(b.dataset.p);
+      render();
+      document.getElementById("catalog").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   });
 }
 
-document.querySelectorAll(".filter").forEach(btn => {
-  btn.addEventListener("click", () => render(btn.dataset.cat));
+function render() {
+  renderCats();
+  const items = filtered();
+  const totalPages = Math.max(1, Math.ceil(items.length / PAGE));
+  if (page > totalPages) page = totalPages;
+  const slice = items.slice((page - 1) * PAGE, page * PAGE);
+  listEl.innerHTML = slice.length ? slice.map(card).join("") :
+    `<p class="empty">Ничего не найдено. Попробуйте другой запрос или <a href="${phone}">позвоните</a>.</p>`;
+  countEl.textContent = `Показано ${slice.length ? ((page - 1) * PAGE + 1) : 0}–${(page - 1) * PAGE + slice.length} из ${items.length}`;
+  renderPager(totalPages);
+}
+
+qEl.addEventListener("input", () => {
+  query = qEl.value;
+  page = 1;
+  render();
 });
 
-document.querySelectorAll(".cat").forEach(el => {
-  el.addEventListener("click", (e) => {
-    e.preventDefault();
-    render(el.dataset.cat);
-    document.getElementById("list").scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+Promise.all([
+  fetch("data/products.json").then(r => r.json()),
+  fetch("data/categories.json").then(r => r.json())
+]).then(([p, c]) => {
+  products = p;
+  categories = c;
+  render();
+}).catch(() => {
+  countEl.textContent = "Не удалось загрузить каталог. Обновите страницу.";
 });
-
-render("all");

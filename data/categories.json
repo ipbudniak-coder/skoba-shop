@@ -1,0 +1,87 @@
+[
+ {
+  "name": "Дверные замки",
+  "slug": "zamki",
+  "count": 50
+ },
+ {
+  "name": "Дверные ручки",
+  "slug": "ruchki",
+  "count": 55
+ },
+ {
+  "name": "Петли дверные",
+  "slug": "petli",
+  "count": 56
+ },
+ {
+  "name": "Доводчики",
+  "slug": "dovodchiki",
+  "count": 33
+ },
+ {
+  "name": "Цилиндровые механизмы для дверей",
+  "slug": "cilindrovye-mehanizmy",
+  "count": 57
+ },
+ {
+  "name": "Межкомнатные механизмы",
+  "slug": "mehanizmy-mezhkomnatnye",
+  "count": 59
+ },
+ {
+  "name": "Фурнитура для раздвижных дверей",
+  "slug": "furnitura-dlya-razdvizhnyh-dverey",
+  "count": 33
+ },
+ {
+  "name": "Накладки, WC-комплекты",
+  "slug": "nakladki-wc-komplekty",
+  "count": 58
+ },
+ {
+  "name": "Ограничители для дверей, дверные упоры",
+  "slug": "upory",
+  "count": 44
+ },
+ {
+  "name": "Шпингалеты, засовы для дверей",
+  "slug": "shpingalety",
+  "count": 44
+ },
+ {
+  "name": "Глазки дверные",
+  "slug": "glazki",
+  "count": 23
+ },
+ {
+  "name": "Фурнитура для входных дверей",
+  "slug": "furnitura-dlya-dverey",
+  "count": 50
+ },
+ {
+  "name": "Цифры дверные",
+  "slug": "cifry-dvernye",
+  "count": 20
+ },
+ {
+  "name": "Оконная фурнитура",
+  "slug": "okonnaya-furnitura",
+  "count": 8
+ },
+ {
+  "name": "Мебельная фурнитура",
+  "slug": "mebelnaya-furnitura",
+  "count": 5
+ },
+ {
+  "name": "Уплотнитель самоклеящийся",
+  "slug": "uplotnitel",
+  "count": 11
+ },
+ {
+  "name": "Сопутствующие товары",
+  "slug": "soputstvuyuschie-tovary",
+  "count": 38
+ }
+]
