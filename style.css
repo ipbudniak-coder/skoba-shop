@@ -7,6 +7,9 @@ nav a{color:#fff;margin-left:16px;text-decoration:none}.hero{background:linear-g
 .btn.ghost{background:none;border:2px solid #f5b301;color:#f5b301}.btn.sm{padding:8px 12px;margin:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
 .cat,.card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 2px 8px #0001}.cat{font-size:34px}.cat h3{font-size:20px;margin:8px 0 4px}.cat p{font-size:14px;color:#666;margin:0}
-.card .img{font-size:56px;text-align:center;background:#eef1f4;border-radius:8px;padding:20px}.card small{color:#888}.card h3{font-size:16px;min-height:40px}
-.row{display:flex;justify-content:space-between;align-items:center}.contacts{list-style:none;padding:0;font-size:18px;line-height:2}
+.card .img{background:#eef1f4;border-radius:8px;padding:12px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.card .img img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.card small{color:#888}.card h3{font-size:16px;min-height:48px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:8px}.contacts{list-style:none;padding:0;font-size:18px;line-height:2}
+.contacts a{color:#1d2a36}.map{margin-top:8px}
 footer{background:#1d2a36;color:#aaa;padding:20px 0;font-size:14px}@media(max-width:600px){nav a{margin:0 12px 0 0}}
