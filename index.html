@@ -14,6 +14,7 @@
     <nav>
       <a href="#catalog">Каталог</a>
       <a href="#about">О нас</a>
+      <a href="#order">Заказать</a>
       <a href="#contacts">Контакты</a>
       <a class="nav-call" href="tel:+375256981184">Позвонить</a>
     </nav>
@@ -63,6 +64,30 @@
 <section id="about" class="wrap about">
   <h2>О павильоне «Скоба»</h2>
   <p>Мы помогаем подобрать замок, ручку, петлю или доводчик под вашу дверь. Если позиции нет на витрине — закажем. Цены ориентировочные; точную стоимость и наличие уточняйте по телефону или в Telegram.</p>
+</section>
+
+
+<section id="order" class="wrap order">
+  <h2>Заказать товар</h2>
+  <p class="lead">Оставьте заявку — перезвоним и уточним наличие. Или сразу <a href="tel:+375256981184">позвоните</a> / напишите в <a href="https://t.me/BudnyakDA" target="_blank" rel="noopener">Telegram</a>.</p>
+  <form id="order-form" class="order-form" action="https://formsubmit.co/ipbudniak@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Заявка с сайта Скоба">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://ipbudniak-coder.github.io/skoba-shop/#order-sent">
+    <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off">
+    <label>Ваше имя<input name="name" required placeholder="Как к вам обращаться"></label>
+    <label>Телефон<input name="phone" type="tel" required placeholder="+375 (__) ___-__-__"></label>
+    <label>Товар<input id="order-product" name="product" required placeholder="Название товара"></label>
+    <label>Количество<input name="qty" type="number" min="1" value="1" required></label>
+    <label class="full">Комментарий<textarea name="message" rows="3" placeholder="Цвет, срочность, адрес доставки…"></textarea></label>
+    <div class="full form-actions">
+      <button class="btn" type="submit">Отправить заявку</button>
+      <a class="btn ghost dark" href="tel:+375256981184">Позвонить</a>
+    </div>
+    <p id="order-hint" class="full hint">Заявка уйдёт на почту павильона. При первой отправке FormSubmit может попросить подтвердить email один раз.</p>
+  </form>
+  <p id="order-sent" class="sent" hidden>Заявка отправлена. Мы свяжемся с вами.</p>
 </section>
 
 <section id="contacts" class="wrap">

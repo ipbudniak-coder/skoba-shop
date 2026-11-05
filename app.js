@@ -58,7 +58,7 @@ function card(p) {
     <h3><a href="${href}" target="_blank" rel="noopener">${p.name}</a></h3>
     <div class="row">
       <b>${money(p.price)}</b>
-      <a class="btn sm" href="${phone}">Заказать</a>
+      <button type="button" class="btn sm order-btn" data-name="${p.name.replace(/"/g, '&quot;')}">Заказать</button>
     </div>
     <div class="links">
       <a href="${href}" target="_blank" rel="noopener">Описание товара</a>
@@ -93,7 +93,30 @@ function render() {
     `<p class="empty">Ничего не найдено. Попробуйте другой запрос или <a href="${phone}">позвоните</a>.</p>`;
   countEl.textContent = `Показано ${slice.length ? ((page - 1) * PAGE + 1) : 0}–${(page - 1) * PAGE + slice.length} из ${items.length}`;
   renderPager(totalPages);
+  listEl.querySelectorAll(".order-btn").forEach(btn => {
+    btn.addEventListener("click", () => openOrder(btn.dataset.name));
+  });
 }
+
+function openOrder(productName) {
+  const input = document.getElementById("order-product");
+  if (input) input.value = productName || "";
+  const form = document.getElementById("order-form");
+  if (form) form.hidden = false;
+  const sent = document.getElementById("order-sent");
+  if (sent) sent.hidden = true;
+  document.getElementById("order").scrollIntoView({ behavior: "smooth", block: "start" });
+  const name = document.querySelector("#order-form input[name=name]");
+  if (name) setTimeout(() => name.focus(), 300);
+}
+
+if (location.hash === "#order-sent") {
+  const form = document.getElementById("order-form");
+  const sent = document.getElementById("order-sent");
+  if (form) form.hidden = true;
+  if (sent) sent.hidden = false;
+}
+
 
 qEl.addEventListener("input", () => {
   query = qEl.value;

@@ -65,3 +65,15 @@ footer{background:#18232f;color:#9aa5b1;padding:22px 0;margin-top:24px;font-size
   .cat-list{flex-direction:row;flex-wrap:wrap;max-height:none}
   .cat-btn{flex:1 1 auto}
 }
+.order .lead{color:#555;max-width:720px}
+.order-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#fff;padding:20px;border-radius:14px;box-shadow:0 2px 10px #0000000d;max-width:760px}
+.order-form label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px}
+.order-form label.full{grid-column:1/-1}
+.order-form input,.order-form textarea{font:inherit;font-weight:400;padding:11px 12px;border:1px solid #cfd6de;border-radius:10px;background:#fff}
+.order-form input:focus,.order-form textarea:focus{outline:2px solid #f0b429;border-color:#f0b429}
+.form-actions{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.hint{margin:0;color:#778;font-size:13px;font-weight:400}
+.honey{position:absolute;left:-10000px;opacity:0;height:0;width:0}
+.sent{background:#e8f7ec;border:1px solid #9fd6b0;color:#14532d;padding:16px 18px;border-radius:12px;font-weight:600;max-width:760px}
+.card .order-btn{border:none}
+@media(max-width:700px){.order-form{grid-template-columns:1fr}}
