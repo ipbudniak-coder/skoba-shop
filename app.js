@@ -1,5 +1,5 @@
 const PAGE = 24;
-const phone = "tel:+375296981184";
+const phone = "tel:+375256981184";
 const tg = "https://t.me/BudnyakDA";
 
 let products = [];
