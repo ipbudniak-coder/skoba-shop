@@ -14,6 +14,7 @@
     <nav>
       <a href="#catalog">Каталог</a>
       <a class="nav-price" href="#price">Прайс-лист</a>
+      <a class="nav-ref" href="#referral">Партнёрам (10%)</a>
       <a href="#about">О нас</a>
       <a href="#order">Заказать</a>
       <a href="#contacts">Контакты</a>
@@ -23,6 +24,7 @@
 </header>
 
 <main id="top">
+<div id="ref-banner" class="ref-banner" role="status" hidden></div>
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
@@ -86,6 +88,35 @@
 </section>
 
 
+<section id="referral" class="wrap referral">
+  <h2>Рекомендуйте «Скобу» и получайте 10% бонусами</h2>
+  <ol class="ref-steps">
+    <li><b>Получите личную ссылку и код</b> за 10 секунд — введите имя и телефон.</li>
+    <li><b>Поделитесь с друзьями, соседями или мастерами</b> — по вашей ссылке или коду друг получит <b>скидку 5%</b> на покупку фурнитуры в павильоне «Скоба».</li>
+    <li><b>Получайте 10% с каждой реальной покупки</b> — после оплаты товара другом в павильоне 73 вам начисляется <b>10% от суммы чека</b> бонусными рублями на любые покупки в «Скобе»!</li>
+  </ol>
+  <form id="ref-form" class="ref-form">
+    <label>Ваше имя<input id="ref-name" required placeholder="Как к вам обращаться"></label>
+    <label>Ваш телефон<input id="ref-phone" type="tel" required placeholder="+375 (__) ___-__-__"></label>
+    <button class="btn big" type="submit">Получить мою ссылку и код</button>
+  </form>
+  <div id="ref-result" class="ref-result" hidden>
+    <p>Ваш личный промокод:</p>
+    <p class="ref-code" id="ref-code"></p>
+    <button class="btn" type="button" id="copy-code">Скопировать код</button>
+    <p>Ваша личная ссылка:</p>
+    <p class="ref-link" id="ref-link"></p>
+    <div class="ref-actions">
+      <button class="btn" type="button" id="copy-link">Скопировать ссылку</button>
+      <a class="btn" id="share-tg" target="_blank" rel="noopener">Отправить в Telegram</a>
+      <a class="btn" id="share-wa" target="_blank" rel="noopener">Отправить в WhatsApp</a>
+      <a class="btn" id="share-viber">Отправить в Viber</a>
+      <button class="btn ghost dark" type="button" id="share-native" hidden>Поделиться…</button>
+    </div>
+    <p id="ref-msg" class="ref-msg" aria-live="polite"></p>
+  </div>
+</section>
+
 <section id="order" class="wrap order">
   <h2>Заказать товар</h2>
   <p class="lead">Оставьте заявку — перезвоним и уточним наличие. Или сразу <a href="tel:+375256981184">позвоните</a> / напишите в <a href="https://t.me/BudnyakDA" target="_blank" rel="noopener">Telegram</a>.</p>
@@ -99,6 +130,7 @@
     <label>Телефон<input name="phone" type="tel" required placeholder="+375 (__) ___-__-__"></label>
     <label>Товар<input id="order-product" name="product" required placeholder="Название товара"></label>
     <label>Количество<input name="qty" type="number" min="1" value="1" required></label>
+    <label class="full ref-field">Промокод друга / партнёра (скидка 5%)<input id="order-ref" name="Код_партнера_реферал" placeholder="Например SK-12345" autocomplete="off"></label>
     <label class="full">Комментарий<textarea name="message" rows="3" placeholder="Цвет, срочность, адрес доставки…"></textarea></label>
     <div class="full form-actions">
       <button class="btn" type="submit">Отправить заявку</button>

@@ -171,3 +171,72 @@ Promise.all([
 }).catch(() => {
   countEl.textContent = "Не удалось загрузить каталог. Обновите страницу.";
 });
+
+/* ===== Реферальная программа ===== */
+(function () {
+  const SITE = "https://ipbudniak-coder.github.io/skoba-shop/";
+  const KEY = "skoba_ref_code", MY = "skoba_my_partner", SENT = "skoba_ref_sent";
+  const TTL = 90 * 864e5;
+  const ls = { get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } },
+               set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+  const clean = v => { const d = String(v || "").toUpperCase().replace(/[^0-9]/g, ""); return d.length === 5 ? "SK-" + d : ""; };
+  const fromUrl = clean(new URLSearchParams(location.search).get("ref"));
+  if (fromUrl) ls.set(KEY, { code: fromUrl, date: Date.now() });
+  let saved = ls.get(KEY);
+  if (saved && Date.now() - saved.date > TTL) { localStorage.removeItem(KEY); saved = null; }
+  const code = saved && saved.code;
+  if (code) {
+    const b = document.getElementById("ref-banner");
+    b.innerHTML = "🎁 Вы перешли по рекомендации партнёра (код <b>" + code + "</b>) — ваша <b>скидка 5%</b> на покупку в павильоне „Скоба“ уже активирована! Оформите заказ на сайте или назовите этот код на кассе.";
+    b.hidden = false;
+    const f = document.getElementById("order-ref"); if (f && !f.value) f.value = code;
+  }
+  function hash5(digits) {
+    let h = 2166136261;
+    const s = "skoba:" + digits;
+    for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619) >>> 0; }
+    return String(10000 + (h % 90000));
+  }
+  function normPhone(p) { let d = String(p).replace(/\D/g, ""); if (d.length === 9) d = "375" + d; if (d.startsWith("80") && d.length === 11) d = "375" + d.slice(2); return d; }
+  const msg = t => { document.getElementById("ref-msg").textContent = t; };
+  function copy(t, ok) {
+    const done = () => msg(ok);
+    if (navigator.clipboard) navigator.clipboard.writeText(t).then(done, () => { prompt("Скопируйте:", t); });
+    else prompt("Скопируйте:", t);
+  }
+  function show(p) {
+    const link = SITE + "?ref=" + p.code;
+    const text = "Скидка 5% на дверную фурнитуру в павильоне «Скоба» (Витебск) по моему коду " + p.code + ": ";
+    document.getElementById("ref-code").textContent = p.code;
+    document.getElementById("ref-link").textContent = link;
+    document.getElementById("share-tg").href = "https://t.me/share/url?url=" + encodeURIComponent(link) + "&text=" + encodeURIComponent(text);
+    document.getElementById("share-wa").href = "https://wa.me/?text=" + encodeURIComponent(text + link);
+    document.getElementById("share-viber").href = "viber://forward?text=" + encodeURIComponent(text + link);
+    document.getElementById("copy-code").onclick = () => copy(p.code, "Код скопирован ✔");
+    document.getElementById("copy-link").onclick = () => copy(link, "Ссылка скопирована ✔");
+    const n = document.getElementById("share-native");
+    if (navigator.share) { n.hidden = false; n.onclick = () => navigator.share({ title: "Скоба", text, url: link }).catch(() => {}); }
+    document.getElementById("ref-result").hidden = false;
+    document.getElementById("ref-name").value = p.name; document.getElementById("ref-phone").value = p.phone;
+  }
+  const mine = ls.get(MY); if (mine && mine.code) show(mine);
+  document.getElementById("ref-form").addEventListener("submit", e => {
+    e.preventDefault();
+    const name = document.getElementById("ref-name").value.trim();
+    const phone = document.getElementById("ref-phone").value.trim();
+    const digits = normPhone(phone);
+    if (!name || digits.length < 9) { alert("Пожалуйста, введите имя и телефон полностью."); return; }
+    const p = { code: "SK-" + hash5(digits), name, phone, date: new Date().toISOString() };
+    ls.set(MY, p); show(p);
+    document.getElementById("ref-result").scrollIntoView({ behavior: "smooth", block: "center" });
+    const sent = ls.get(SENT) || [];
+    if (sent.includes(p.code)) return;
+    try {
+      fetch("https://formsubmit.co/ajax/ipbudniak@gmail.com", {
+        method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ _subject: "СКОБА ПАРТНЕР: " + p.code + " (" + name + ")", "Тип заявки": "Регистрация партнёра",
+          "Код партнёра": p.code, "Имя партнёра": name, "Телефон": phone, _captcha: "false", _template: "table" })
+      }).then(r => { if (r.ok) { sent.push(p.code); ls.set(SENT, sent); } }).catch(() => {});
+    } catch (err) {}
+  });
+})();

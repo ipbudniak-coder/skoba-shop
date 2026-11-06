@@ -98,3 +98,20 @@ footer{background:#18232f;color:#9aa5b1;padding:22px 0;margin-top:24px;font-size
 .prow .no{color:#a3261b;font-weight:700}
 .prow .btn{font-size:18px;margin:0}
 @media(max-width:640px){.prow{grid-template-columns:1fr auto}.prow .pn{grid-column:1/-1}.prow .btn{width:auto}}
+
+.nav-ref{color:#f0b429!important}
+.ref-banner{background:#f0b429;color:#18232f;font-size:20px;line-height:1.45;padding:16px 20px;text-align:center;font-weight:600;border-bottom:3px solid #18232f}
+.referral{font-size:20px;line-height:1.55}
+.referral h2{font-size:clamp(26px,4vw,36px)}
+.ref-steps{padding-left:28px}.ref-steps li{margin:0 0 14px}
+.ref-form{display:grid;grid-template-columns:1fr 1fr;gap:16px;background:#fff;padding:20px;border-radius:14px;border:3px solid #18232f}
+.ref-form label{display:flex;flex-direction:column;font-weight:700;gap:6px}
+.ref-form input,#order-ref{font-size:20px;padding:14px;border:2px solid #18232f;border-radius:10px}
+.btn.big{grid-column:1/-1;font-size:22px;padding:16px}
+.ref-result{margin-top:20px;background:#18232f;color:#fff;padding:22px;border-radius:14px}
+.ref-code{font-size:44px;font-weight:800;color:#f0b429;margin:4px 0;letter-spacing:2px}
+.ref-link{font-size:20px;word-break:break-all;background:#fff;color:#18232f;padding:12px;border-radius:8px}
+.ref-result .btn{font-size:19px}
+.ref-msg{color:#f0b429;font-weight:700}
+.ref-field{font-weight:700;font-size:18px}
+@media(max-width:700px){.ref-form{grid-template-columns:1fr}}
