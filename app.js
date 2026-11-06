@@ -110,6 +110,24 @@ function openOrder(productName) {
   if (name) setTimeout(() => name.focus(), 300);
 }
 
+(function () {
+  const form = document.getElementById("order-form");
+  if (!form || !window.fetch || !window.FormData) return;
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    const btn = form.querySelector("button");
+    if (btn) btn.disabled = true;
+    fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } })
+      .then(r => r.json().catch(() => ({})).then(j => {
+        if (!(r.ok && j && j.ok === true)) throw new Error("send failed");
+        form.reset(); form.hidden = true;
+        const sent = document.getElementById("order-sent");
+        if (sent) { sent.hidden = false; sent.scrollIntoView({ behavior: "smooth", block: "center" }); }
+      }))
+      .catch(() => { if (btn) btn.disabled = false; HTMLFormElement.prototype.submit.call(form); });
+  });
+})();
+
 if (location.hash === "#order-sent") {
   const form = document.getElementById("order-form");
   const sent = document.getElementById("order-sent");
@@ -232,11 +250,14 @@ Promise.all([
     const sent = ls.get(SENT) || [];
     if (sent.includes(p.code)) return;
     try {
-      fetch("https://formsubmit.co/ajax/ipbudniak@gmail.com", {
+      fetch("https://sendm8.com/f/ipbudniak@gmail.com", {
         method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({ _subject: "СКОБА ПАРТНЕР: " + p.code + " (" + name + ")", "Тип заявки": "Регистрация партнёра",
-          "Код партнёра": p.code, "Имя партнёра": name, "Телефон": phone, _captcha: "false", _template: "table" })
-      }).then(r => { if (r.ok) { sent.push(p.code); ls.set(SENT, sent); } }).catch(() => {});
+          "Код партнёра": p.code, "Имя партнёра": name, "Телефон": phone, _gotcha: "" })
+      }).then(r => r.json().catch(() => ({})).then(j => {
+        // ok:true (incl. pending:"confirmation") = stored by sendm8, delivered after email confirm
+        if (r.ok && j && j.ok === true) { sent.push(p.code); ls.set(SENT, sent); }
+      })).catch(() => {});
     } catch (err) {}
   });
 })();
