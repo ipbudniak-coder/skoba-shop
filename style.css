@@ -77,3 +77,24 @@ footer{background:#18232f;color:#9aa5b1;padding:22px 0;margin-top:24px;font-size
 .sent{background:#e8f7ec;border:1px solid #9fd6b0;color:#14532d;padding:16px 18px;border-radius:12px;font-weight:600;max-width:760px}
 .card .order-btn{border:none}
 @media(max-width:700px){.order-form{grid-template-columns:1fr}}
+
+/* Прайс-лист */
+.nav-price{background:#fff;color:#18232f!important;padding:8px 12px;border-radius:8px;text-decoration:none!important}
+.price h2{font-size:30px}
+.btn.big{font-size:20px;padding:16px 24px}
+.price-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px}
+.price-meta{font-size:19px;margin:10px 0 0}
+.price-tools{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;margin:20px 0 8px}
+.price-tools .search{flex:1 1 320px}
+.price-tools input[type=search]{width:100%;font-size:20px;padding:14px;border:2px solid #18232f;border-radius:10px}
+.chk{font-size:20px;font-weight:700;display:flex;gap:10px;align-items:center}
+.chk input{width:26px;height:26px}
+.plist{display:flex;flex-direction:column;gap:8px}
+.prow{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;background:#fff;border:2px solid #d8d4cc;border-radius:12px;padding:12px 16px}
+.prow .pn{font-size:19px;font-weight:600;line-height:1.35}
+.prow .pa{display:block;font-size:16px;color:#3d4955;font-weight:400;margin-top:4px}
+.prow .pp{font-size:24px;font-weight:800;color:#18232f;white-space:nowrap}
+.prow .pp small{display:block;font-size:13px;font-weight:600;color:#3d4955}
+.prow .no{color:#a3261b;font-weight:700}
+.prow .btn{font-size:18px;margin:0}
+@media(max-width:640px){.prow{grid-template-columns:1fr auto}.prow .pn{grid-column:1/-1}.prow .btn{width:auto}}

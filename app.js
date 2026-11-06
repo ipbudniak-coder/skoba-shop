@@ -124,6 +124,43 @@ qEl.addEventListener("input", () => {
   render();
 });
 
+/* Прайс-лист */
+const PPAGE = 50;
+let price = [], pq = "", pstock = false, ppage = 1;
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+function renderPrice() {
+  const q = pq.trim().toLowerCase();
+  const items = price.filter(x => (!pstock || x.s) && (!q || x.n.toLowerCase().includes(q) || x.a.toLowerCase().includes(q) || String(x.id) === q));
+  const tp = Math.max(1, Math.ceil(items.length / PPAGE));
+  if (ppage > tp) ppage = tp;
+  const sl = items.slice((ppage - 1) * PPAGE, ppage * PPAGE);
+  const el = document.getElementById("plist");
+  el.innerHTML = sl.length ? sl.map(x => `<div class="prow">
+    <div class="pn">${esc(x.n)}<span class="pa">Арт. ${esc(x.a || "—")} · код ${x.id}${x.s ? "" : ' · <span class="no">нет в наличии</span>'}</span></div>
+    <div class="pp"><small>Розничная цена</small>${money(x.p)}</div>
+    <button type="button" class="btn sm porder" data-name="${esc(x.n + (x.a ? " (арт. " + x.a + ")" : "") + " — " + money(x.p))}">Заказать</button>
+  </div>`).join("") : `<p class="empty">Ничего не найдено.</p>`;
+  document.getElementById("pcount").textContent = `Показано ${sl.length ? (ppage - 1) * PPAGE + 1 : 0}–${(ppage - 1) * PPAGE + sl.length} из ${items.length}`;
+  el.querySelectorAll(".porder").forEach(b => b.addEventListener("click", () => openOrder(b.dataset.name)));
+  const pg = document.getElementById("ppager");
+  let h = "";
+  if (ppage > 1) h += `<button type="button" data-p="${ppage - 1}">← Назад</button>`;
+  h += `<span>${ppage} / ${tp}</span>`;
+  if (ppage < tp) h += `<button type="button" data-p="${ppage + 1}">Вперёд →</button>`;
+  pg.innerHTML = tp > 1 ? h : "";
+  pg.querySelectorAll("button").forEach(b => b.addEventListener("click", () => {
+    ppage = Number(b.dataset.p); renderPrice();
+    document.getElementById("price").scrollIntoView({ behavior: "smooth", block: "start" });
+  }));
+}
+document.getElementById("pq").addEventListener("input", e => { pq = e.target.value; ppage = 1; renderPrice(); });
+document.getElementById("pstock").addEventListener("change", e => { pstock = e.target.checked; ppage = 1; renderPrice(); });
+fetch("data/price.json").then(r => r.json()).then(d => {
+  price = d.items;
+  document.getElementById("price-total").textContent = d.count;
+  renderPrice();
+}).catch(() => { document.getElementById("pcount").textContent = "Не удалось загрузить прайс. Обновите страницу."; });
+
 Promise.all([
   fetch("data/products.json").then(r => r.json()),
   fetch("data/categories.json").then(r => r.json())

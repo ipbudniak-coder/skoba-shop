@@ -13,6 +13,7 @@
     <a class="logo" href="#top">Скоба<span>павильон фурнитуры · Витебск</span></a>
     <nav>
       <a href="#catalog">Каталог</a>
+      <a class="nav-price" href="#price">Прайс-лист</a>
       <a href="#about">О нас</a>
       <a href="#order">Заказать</a>
       <a href="#contacts">Контакты</a>
@@ -28,6 +29,8 @@
       <h1>Дверная фурнитура в наличии и под заказ</h1>
       <p>Полный каталог: замки, ручки, петли, доводчики, цилиндры и многое другое. Посмотрите описание товара — и звоните или пишите, оформим заказ в павильоне 73.</p>
       <a class="btn" href="#catalog">Смотреть каталог</a>
+      <a class="btn" href="price/skoba-price.xlsx" download>⬇ Скачать прайс (Excel)</a>
+      <a class="btn ghost" href="#price">Прайс-лист онлайн</a>
       <a class="btn ghost" href="tel:+375256981184">+375 (25) 698-11-84</a>
     </div>
     <div class="hero-card">
@@ -59,6 +62,22 @@
       <div class="pager" id="pager"></div>
     </div>
   </div>
+</section>
+
+<section id="price" class="wrap price">
+  <h2>Прайс-лист — розничные цены</h2>
+  <div class="price-top">
+    <a class="btn big" href="price/skoba-price.xlsx" download>⬇ Скачать прайс (Excel)</a>
+    <p class="price-meta">Обновлено <b>06.11.2026</b> · позиций: <b id="price-total">2470</b></p>
+  </div>
+  <div class="price-tools">
+    <label class="search"><span class="sr">Поиск в прайсе</span>
+      <input id="pq" type="search" placeholder="Название, артикул или код…" autocomplete="off"></label>
+    <label class="chk"><input id="pstock" type="checkbox"> Только в наличии</label>
+  </div>
+  <p class="count" id="pcount">Загрузка прайса…</p>
+  <div id="plist" class="plist"></div>
+  <div class="pager" id="ppager"></div>
 </section>
 
 <section id="about" class="wrap about">
