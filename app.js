@@ -261,3 +261,47 @@ Promise.all([
     } catch (err) {}
   });
 })();
+
+/* ===== Слово на сегодня ===== */
+(function () {
+  const quoteEl = document.getElementById("word-quote");
+  const refEl = document.getElementById("word-ref");
+  const btn = document.getElementById("word-next");
+  if (!quoteEl || !refEl || !btn) return;
+  let quotes = [];
+  let idx = 0;
+
+  function dayIndex(n) {
+    const d = new Date();
+    const utc = Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
+    const day = Math.floor(utc / 864e5);
+    return ((day % n) + n) % n;
+  }
+
+  function show(i) {
+    if (!quotes.length) return;
+    idx = ((i % quotes.length) + quotes.length) % quotes.length;
+    const q = quotes[idx];
+    quoteEl.textContent = "«" + q.text + "»";
+    refEl.textContent = q.ref;
+  }
+
+  fetch("data/quotes.json")
+    .then(r => r.json())
+    .then(list => {
+      quotes = Array.isArray(list) ? list : [];
+      if (!quotes.length) throw new Error("empty");
+      show(dayIndex(quotes.length));
+    })
+    .catch(() => {
+      quoteEl.textContent = "Не удалось загрузить цитату. Обновите страницу.";
+      refEl.textContent = "";
+    });
+
+  btn.addEventListener("click", () => {
+    if (quotes.length < 2) { show(idx); return; }
+    let next = Math.floor(Math.random() * quotes.length);
+    if (next === idx) next = (idx + 1) % quotes.length;
+    show(next);
+  });
+})();
