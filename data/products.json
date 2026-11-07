@@ -553,67 +553,277 @@
   "id": 8727,
   "name": "Ручки дверные Vela Вита CP (хром) (уценка)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Вита",
+  "color": "хром",
+  "clearance": true,
   "price": 8.3,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vita-cp-hrom-ucenka/",
   "article": "11170083",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vita-cp-hrom-ucenka/",
+  "image": "img/catalog/vela-eco/11170083.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/8727/origin/68e2f7b332ae6.webp",
-  "image": "img/catalog/8727.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/11170083.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Вита CP (хром) (уценка)"
+   }
+  ],
+  "description": "Ручки из партии с небольшими дефектами (точки, легкие царапины)",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "150 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 9077,
   "name": "Ручки дверные Vela Лайм BL (черный)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Лайм",
+  "color": "черный",
+  "clearance": false,
   "price": 24.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-laym-bl-chernyy/",
   "article": "00071193",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-laym-bl-chernyy/",
+  "image": "img/catalog/vela-eco/00071193.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/9077/origin/6a521eaca7ec3.webp",
-  "image": "img/catalog/9077.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00071193.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Лайм BL (черный)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-df5ee1eccd43d2fe.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Лайм BL (черный). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": null,
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "матовый никель/хром",
+   "Длина квадрата": "105 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с фиксацией",
+   "Форма основания": "квадратное",
+   "Фиксация декоративного кольца": "саморезы или стяжные винты",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15",
+  "spec_color_note": "В характеристиках поставщика поле «Цвет ручек» указано как «матовый никель/хром». В названии артикула цвет — «черный». Таблица ниже приведена как на сайте поставщика и не исправлена."
  },
  {
   "id": 9073,
   "name": "Ручки дверные Vela Прима MSG (матовое золото)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Прима",
+  "color": "матовое золото",
+  "clearance": false,
   "price": 24.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-prima-msg-matovoe-zoloto/",
   "article": "00071189",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-prima-msg-matovoe-zoloto/",
+  "image": "img/catalog/vela-eco/00071189.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/9073/origin/6a5165b248ac7.webp",
-  "image": "img/catalog/9073.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00071189.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Прима MSG (матовое золото)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-df5ee1eccd43d2fe.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Прима MSG (матовое золото). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": null,
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "матовое золото",
+   "Длина квадрата": "105 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с резьбой",
+   "Форма основания": "круглое",
+   "Фиксация декоративного кольца": "резьбовая",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 9074,
   "name": "Ручки дверные Vela Блейд BL (черный)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Блейд",
+  "color": "черный",
+  "clearance": false,
   "price": 26.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-bleyd-bl-chernyy/",
   "article": "00071195",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-bleyd-bl-chernyy/",
+  "image": "img/catalog/vela-eco/00071195.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/9074/origin/6a521ebaadb17.webp",
-  "image": "img/catalog/9074.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00071195.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Блейд BL (черный)"
+   }
+  ],
+  "description": null,
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "черный",
+   "Длина квадрата": "105 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с фиксацией",
+   "Форма основания": "квадратное",
+   "Фиксация декоративного кольца": "саморезы или стяжные винты",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 9075,
   "name": "Ручки дверные Vela Перуджа MSG (матовое золото)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Перуджа",
+  "color": "матовое золото",
+  "clearance": false,
   "price": 24.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-perudzha-msg-matovoe-zoloto/",
   "article": "00071194",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-perudzha-msg-matovoe-zoloto/",
+  "image": "img/catalog/vela-eco/00071194.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/9075/origin/6a51533cae8a3.webp",
-  "image": "img/catalog/9075.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00071194.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Перуджа MSG (матовое золото)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-df5ee1eccd43d2fe.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Перуджа MSG (матовое золото). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": null,
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "матовое золото",
+   "Длина квадрата": "105 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с фиксацией",
+   "Форма основания": "квадратное",
+   "Фиксация декоративного кольца": "саморезы или стяжные винты",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 9076,
   "name": "Ручки дверные Vela Лайм SN/CP (матовый никель/хром)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Лайм",
+  "color": "матовый никель/хром",
+  "clearance": false,
   "price": 24.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-laym-sncp-matovyy-nikelhrom/",
   "article": "00071192",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-laym-sncp-matovyy-nikelhrom/",
+  "image": "img/catalog/vela-eco/00071192.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/9076/origin/6a521e9dcf30c.webp",
-  "image": "img/catalog/9076.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00071192.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Лайм SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-513ed9f161f36985.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Лайм SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": null,
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "матовый никель/хром",
+   "Длина квадрата": "105 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с фиксацией",
+   "Форма основания": "квадратное",
+   "Фиксация декоративного кольца": "саморезы или стяжные винты",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 8939,
@@ -696,12 +906,43 @@
   "id": 2086,
   "name": "Ручки дверные Vela Перуджа SN/CP (матовый никель/хром)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Перуджа",
+  "color": "матовый никель/хром",
+  "clearance": false,
   "price": 24.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-perudzha-nisni-matovyy-nikel--nikel/",
   "article": "00006585",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-perudzha-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006585.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/2086/origin/67cc867d747a7.webp",
-  "image": "img/catalog/2086.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006585.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Перуджа SN/CP (матовый никель/хром)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "матовый никель/хром",
+   "Штрихкод": "4813308000148"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 8898,
@@ -982,12 +1223,42 @@
   "id": 2085,
   "name": "Ручки дверные Vela Мерано SN/CP (матовый никель/хром)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Мерано",
+  "color": "матовый никель/хром",
+  "clearance": false,
   "price": 24.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-merano-nisni-matovyy-nikel--nikel/",
   "article": "00006806",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-merano-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006806.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/2085/origin/67cc86a280e94.webp",
-  "image": "img/catalog/2085.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006806.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Мерано SN/CP (матовый никель/хром)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 8941,
@@ -1103,12 +1374,42 @@
   "id": 2090,
   "name": "Ручки дверные Vela Мерано BL (черный)",
   "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Мерано",
+  "color": "черный",
+  "clearance": false,
   "price": 23.0,
-  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-merano-black-chernyy/",
   "article": "00005859",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-merano-black-chernyy/",
+  "image": "img/catalog/vela-eco/00005859.webp",
   "image_src": "https://ulisskom.by/data/catalog/products/2090/origin/67a9271d72b29.webp",
-  "image": "img/catalog/2090.webp",
-  "in_stock": true
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00005859.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Мерано BL (черный)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "черный"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
  },
  {
   "id": 8893,
@@ -1153,6 +1454,1458 @@
   "image_src": "https://ulisskom.by/data/catalog/products/7867/origin/6409df6e31c2b.webp",
   "image": "img/catalog/7867.webp",
   "in_stock": true
+ },
+ {
+  "id": 2091,
+  "name": "Ручки дверные Vela Перуджа BL (черный)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Перуджа",
+  "color": "черный",
+  "clearance": false,
+  "price": 23.0,
+  "article": "00006808",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-perudzha-black-chernyy/",
+  "image": "img/catalog/vela-eco/00006808.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2091/origin/67abcc3222dd5.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006808.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Перуджа BL (черный)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-513ed9f161f36985.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Перуджа BL (черный). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "черный",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Штрихкод": "4813308000117"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
+ },
+ {
+  "id": 2062,
+  "name": "Ручки дверные Vela Лигурия SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Лигурия",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 27.0,
+  "article": "00006809",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-liguriya-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006809.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2062/origin/67a9f4603be56.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006809.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Лигурия SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Лигурия SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Длина квадрата": "100 мм",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром",
+   "Левая/Правая/Универсальная": "универсальная"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
+ },
+ {
+  "id": 8179,
+  "name": "Ручки дверные Vela Альма SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Альма",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 27.0,
+  "article": "00070239",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-alma-sncp-matovyy-nikelhrom/",
+  "image": "img/catalog/vela-eco/00070239.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/8179/origin/67cc9778ae15b.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00070239.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Альма SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Альма SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": null,
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "матовый никель/хром",
+   "Длина квадрата": "105 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с фиксацией",
+   "Форма основания": "квадратное",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
+ },
+ {
+  "id": 2087,
+  "name": "Ручки дверные Vela Сорренто SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Сорренто",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00006811",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-sorrento-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006811.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2087/origin/6773efa7a3003.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006811.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Сорренто SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dc6f8cafe4e811c5.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Сорренто SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Длина квадрата": "100 мм",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром",
+   "Левая/Правая/Универсальная": "универсальная"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
+ },
+ {
+  "id": 8496,
+  "name": "Ручки дверные Vela Сорренто AB (бронза)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Сорренто",
+  "color": "бронза",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00070493",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-sorrento-ab-bronza/",
+  "image": "img/catalog/vela-eco/00070493.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/8496/origin/6773ed73b06c8.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00070493.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Сорренто AB (бронза)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dc6f8cafe4e811c5.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Сорренто AB (бронза). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "бронза",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с фиксацией",
+   "Форма основания": "квадратное",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
+ },
+ {
+  "id": 2092,
+  "name": "Ручки дверные Vela Орион SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Орион",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00006812",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-orion-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006812.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2092/origin/67cc988806b46.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006812.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Орион SN/CP (матовый никель/хром)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=1&per-page=15"
+ },
+ {
+  "id": 7419,
+  "name": "Ручки дверные Vela Орион BL (черный)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Орион",
+  "color": "черный",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00007107",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-orion-bl/",
+  "image": "img/catalog/vela-eco/00007107.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7419/origin/67cc995a856cd.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00007107.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Орион BL (черный)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Орион BL (черный). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "черный",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2098,
+  "name": "Ручки дверные Vela Блейд NIS/CR (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Блейд",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00005862",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-bleyd-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00005862.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2098/origin/679fca32617da.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00005862.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Блейд NIS/CR (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Блейд NIS/CR (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2099,
+  "name": "Ручки дверные Vela Блейд ORB (темная медь)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Блейд",
+  "color": "темная медь",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00005863",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-bleyd-orb-temnaya-med/",
+  "image": "img/catalog/vela-eco/00005863.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2099/origin/679fca92d312a.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00005863.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Блейд ORB (темная медь)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "темная медь"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2097,
+  "name": "Ручки дверные Vela Веста SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Веста",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 31.0,
+  "article": "00005865",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vesta-sncp-matovyy-nikelhrom/",
+  "image": "img/catalog/vela-eco/00005865.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2097/origin/67cc97972ffb9.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00005865.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Веста SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Веста SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2093,
+  "name": "Ручки дверные Vela Нова SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Нова",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 31.0,
+  "article": "00006814",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-nova-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006814.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2093/origin/679fd218c2123.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006814.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Нова SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Нова SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "матовый никель/хром",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2094,
+  "name": "Ручки дверные Vela Нова CP/White (хром/белый)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Нова",
+  "color": "хром/белый",
+  "clearance": false,
+  "price": 31.0,
+  "article": "00005867",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-nova-crwhite-hrombelyy/",
+  "image": "img/catalog/vela-eco/00005867.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2094/origin/679fd41f1732e.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00005867.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Нова CP/White (хром/белый)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Нова CP/White (хром/белый). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "хром/белый",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 7391,
+  "name": "Ручки дверные Vela Нова CP/Black (хром/черный)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Нова",
+  "color": "хром/черный",
+  "clearance": false,
+  "price": 31.0,
+  "article": "00007108",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-nova-crblack/",
+  "image": "img/catalog/vela-eco/00007108.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7391/origin/679fd459892f7.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00007108.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Нова CP/Black (хром/черный)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Нова CP/Black (хром/черный). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "хром/черный",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 7340,
+  "name": "Ручки дверные Vela Бостон SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Бостон",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00006977",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-boston-niscr/",
+  "image": "img/catalog/vela-eco/00006977.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7340/origin/67a913b5b28f4.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006977.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Бостон SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Бостон SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "матовый никель/хром",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Форма основания": "квадратное"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 8497,
+  "name": "Ручки дверные Vela Бостон AB (бронза)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Бостон",
+  "color": "бронза",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00070492",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-boston-ab-bronza/",
+  "image": "img/catalog/vela-eco/00070492.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/8497/origin/6773b1c10f519.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00070492.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Бостон AB (бронза)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Бостон AB (бронза). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "бронза",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с фиксацией",
+   "Форма основания": "квадратное",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 7342,
+  "name": "Ручки дверные Vela Герион SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Герион",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00006978",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-gerion-niscr/",
+  "image": "img/catalog/vela-eco/00006978.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7342/origin/679fd49114365.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006978.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Герион SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Герион SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "матовый никель/хром",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 7341,
+  "name": "Ручки дверные Vela Герион AB (бронза)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Герион",
+  "color": "бронза",
+  "clearance": false,
+  "price": 26.0,
+  "article": "00006979",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-gerion-ab/",
+  "image": "img/catalog/vela-eco/00006979.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7341/origin/679fd4bc151d6.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006979.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Герион AB (бронза)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "бронза"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2101,
+  "name": "Ручки дверные Vela Логика SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Логика",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 21.0,
+  "article": "00008104",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-logika-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00008104.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2101/origin/679167ec360b5.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00008104.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Логика SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Логика SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром",
+   "Длина квадрата": "150 мм"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 7221,
+  "name": "Ручки дверные Vela Логика AB (бронза)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Логика",
+  "color": "бронза",
+  "clearance": false,
+  "price": 23.0,
+  "article": "00006800",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-logika-ab/",
+  "image": "img/catalog/vela-eco/00006800.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7221/origin/679167cfccfe8.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006800.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Логика AB (бронза)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Логика AB (бронза). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "бронза",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2102,
+  "name": "Ручки дверные Vela Прима SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Прима",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 21.0,
+  "article": "00006801",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-prima-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006801.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2102/origin/6775b07bbb199.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006801.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Прима SN/CP (матовый никель/хром)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 2103,
+  "name": "Ручки дверные Vela Прима AB (бронза)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Прима",
+  "color": "бронза",
+  "clearance": false,
+  "price": 21.0,
+  "article": "00007105",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-prima-ab-bronza/",
+  "image": "img/catalog/vela-eco/00007105.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2103/origin/6775b339a8f72.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00007105.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Прима AB (бронза)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dc6f8cafe4e811c5.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Прима AB (бронза). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "бронза",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=2&per-page=15"
+ },
+ {
+  "id": 7925,
+  "name": "Ручки дверные Vela Аккорд SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Аккорд",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 27.0,
+  "article": "00026703",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-akkord-niscr-matovyy-nikelhrom/",
+  "image": "img/catalog/vela-eco/00026703.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7925/origin/678c0976c977d.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00026703.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Аккорд SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Аккорд SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "алюминий",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "105 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Тип установки накладки": "с резьбой",
+   "Форма основания": "круглое",
+   "Фиксация декоративного кольца": "резьбовая",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2105,
+  "name": "Ручки дверные Vela Вита CP (хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Вита",
+  "color": "хром",
+  "clearance": false,
+  "price": 26.5,
+  "article": "00006798",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-vita-cr-hrom/",
+  "image": "img/catalog/vela-eco/00006798.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2105/origin/67955b68d0f21.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006798.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Вита CP (хром)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Цвет ручек": "хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2106,
+  "name": "Ручки дверные Vela Морион CP (хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Морион",
+  "color": "хром",
+  "clearance": false,
+  "price": 25.0,
+  "article": "00006796",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-morion-cr-hrom/",
+  "image": "img/catalog/vela-eco/00006796.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2106/origin/67955ca266a44.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006796.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Морион CP (хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Морион CP (хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "хром",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Длина квадрата": "140 мм"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 4198,
+  "name": "Ручки дверные Vela Морион AB (бронза)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Морион",
+  "color": "бронза",
+  "clearance": false,
+  "price": 25.0,
+  "article": "00006797",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-morion-ab/",
+  "image": "img/catalog/vela-eco/00006797.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/4198/origin/67955d6c9ca06.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006797.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Морион AB (бронза)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Морион AB (бронза). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "бронза",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Длина квадрата": "140 мм",
+   "Форма основания": "круглое",
+   "Фиксация декоративного кольца": "резьбовая"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 7420,
+  "name": "Ручки дверные Vela Морион BL (черный)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Морион",
+  "color": "черный",
+  "clearance": false,
+  "price": 25.0,
+  "article": "00007103",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-morion-bl/",
+  "image": "img/catalog/vela-eco/00007103.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/7420/origin/67955de2acff6.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00007103.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Морион BL (черный)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Морион BL (черный). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "черный",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Длина квадрата": "140 мм"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2107,
+  "name": "Ручки дверные Vela Генуя SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Генуя",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 23.5,
+  "article": "00006802",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-genuya-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006802.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2107/origin/67cc974936765.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006802.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Генуя SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Генуя SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2108,
+  "name": "Ручки дверные Vela Ардея SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Ардея",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 23.5,
+  "article": "00006804",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-ardeya-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006804.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2108/origin/67cc86c122d1d.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006804.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Ардея SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-6b40bbff1506b385.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Ардея SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2109,
+  "name": "Ручки дверные Vela Стелла SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Стелла",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 24.5,
+  "article": "00007106",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-stella-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00007106.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2109/origin/67972f816e850.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00007106.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Стелла SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Стелла SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2110,
+  "name": "Ручки дверные Vela Румба SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Румба",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 25.0,
+  "article": "00006519",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-rumba-nisni-matovyy-nikel--nikel/",
+  "image": "img/catalog/vela-eco/00006519.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2110/origin/6791e2f16a444.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006519.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Румба SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Румба SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2111,
+  "name": "Ручки дверные Vela Румба AB (бронза)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Румба",
+  "color": "бронза",
+  "clearance": false,
+  "price": 25.0,
+  "article": "00005870",
+  "url": "https://ulisskom.by/furnitura/ruchki-dvernye-vela-vela-rumba-ab-bronza/",
+  "image": "img/catalog/vela-eco/00005870.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2111/origin/677317dd43aff.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00005870.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Румба AB (бронза)"
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Цвет ручек": "бронза",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1"
+  },
+  "supplier_availability": "Есть на складе",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
+ },
+ {
+  "id": 2104,
+  "name": "Ручки дверные Vela Вита SN/CP (матовый никель/хром)",
+  "category": "Дверные ручки",
+  "series": "Vela Eco",
+  "model": "Вита",
+  "color": "матовый никель/хром",
+  "clearance": false,
+  "price": 26.5,
+  "article": "00006799",
+  "url": "https://ulisskom.by/furnitura/fiksator-vela-wc-round-niscr-matovyy-nikelhrom/",
+  "image": "img/catalog/vela-eco/00006799.webp",
+  "image_src": "https://ulisskom.by/data/catalog/products/2104/origin/678c2a28169b8.webp",
+  "gallery": [
+   {
+    "src": "img/catalog/vela-eco/00006799.webp",
+    "kind": "product",
+    "alt": "Ручки дверные Vela Вита SN/CP (матовый никель/хром)"
+   },
+   {
+    "src": "img/catalog/vela-eco/pack-dbbd123c1c8e389e.webp",
+    "kind": "pack",
+    "alt": "Упаковка комплекта Ручки дверные Vela Вита SN/CP (матовый никель/хром). Это коробка: цвет ручки на этом фото не виден."
+   }
+  ],
+  "description": "Vela \"ECO\" - это большой выбор дверных ручек, доступная цена, надежность, качество и экологичность, т.к. в упаковке используется 100% переработанный картон, делая ее удобной, оригинальной и позволяет заботиться об окружающей среде. Рекомендованная толщина двери: 35 - 60 мм. Для установки на входные и сантехнические двери комплектуются накладками и фиксаторами WC аналогичной серии.",
+  "specifications": {
+   "Производитель": "Vela",
+   "Тип упаковки": "коробка",
+   "Материал ручки": "алюминий",
+   "Материал внутренней розетки": "ЦАМ",
+   "Покрытие": "гальваника",
+   "Длина квадрата": "100 мм",
+   "Размер сечения квадрата ручки": "8 мм",
+   "Гарантия": "1 год",
+   "Левая/Правая/Универсальная": "универсальная",
+   "Шт. в упаковке:": "40",
+   "Шт. в минибоксе:": "1",
+   "Цвет ручек": "матовый никель/хром"
+  },
+  "supplier_availability": "Нет в наличии",
+  "pavilion_availability": "Не проверено",
+  "in_stock": null,
+  "source_checked": "2026-11-07",
+  "series_source": "https://ulisskom.by/furnitura/ruchki/ruchki-razdelnye/vela-standart/?page=3&per-page=15"
  },
  {
   "id": 9099,

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Скоба — каталог дверной фурнитуры, Витебск</title>
-<meta name="description" content="Павильон Скоба в Витебске: замки, ручки, петли, доводчики и фурнитура под заказ.">
+<meta name="description" content="Павильон Скоба в Витебске: замки, ручки Vela Eco, петли, доводчики и фурнитура под заказ.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
     <a class="logo" href="#top">Скоба<span>павильон фурнитуры · Витебск</span></a>
     <nav>
       <a href="#catalog">Каталог</a>
+      <a href="#vela-eco">Vela Eco</a>
       <a class="nav-price" href="#price">Прайс-лист</a>
       <a class="nav-ref" href="#referral">Партнёрам (10%)</a>
       <a href="#about">О нас</a>
@@ -32,6 +33,7 @@
       <h1>Дверная фурнитура в наличии и под заказ</h1>
       <p>Полный каталог: замки, ручки, петли, доводчики, цилиндры и многое другое. Посмотрите описание товара — и звоните или пишите, оформим заказ в павильоне 73.</p>
       <a class="btn" href="#catalog">Смотреть каталог</a>
+      <a class="btn" href="#vela-eco">Ручки Vela Eco</a>
       <a class="btn" href="price/skoba-price.xlsx" download>⬇ Скачать прайс (Excel)</a>
       <a class="btn ghost" href="#price">Прайс-лист онлайн</a>
       <a class="btn ghost" href="tel:+375256981184">+375 (25) 698-11-84</a>
@@ -65,6 +67,14 @@
     </label>
   </div>
 
+  <div id="vela-eco" class="series-bar">
+    <p class="series-kicker">Серия ручек</p>
+    <div id="series-btns" class="chip-row"></div>
+    <p id="series-lead" class="series-lead"></p>
+    <div id="model-btns" class="chip-row"></div>
+    <div id="color-btns" class="chip-row"></div>
+  </div>
+
   <div class="catalog-layout">
     <aside class="side">
       <h3>Категории</h3>
@@ -89,6 +99,7 @@
       <input id="pq" type="search" placeholder="Название, артикул или код…" autocomplete="off"></label>
     <label class="chk"><input id="pstock" type="checkbox"> Только в наличии</label>
   </div>
+  <p class="price-hint">Для серии Vela Eco отметка наличия — склад поставщика на 07.11.2026, а не полка павильона 73. Оптовые цены не публикуются.</p>
   <p class="count" id="pcount">Загрузка прайса…</p>
   <div id="plist" class="plist"></div>
   <div class="pager" id="ppager"></div>
@@ -177,6 +188,13 @@
 </main>
 
 <footer><div class="wrap">© 2026 Скоба · Витебск. Цены в BYN, ознакомительные.</div></footer>
+<div id="pdp" class="pdp" hidden>
+  <div class="pdp-card" role="dialog" aria-modal="true" aria-labelledby="pdp-title">
+    <button type="button" class="pdp-x" id="pdp-close">Закрыть</button>
+    <h3 id="pdp-title"></h3>
+    <div id="pdp-body"></div>
+  </div>
+</div>
 <script src="app.js"></script>
 </body>
 </html>
