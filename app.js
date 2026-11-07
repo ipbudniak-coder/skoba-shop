@@ -1,10 +1,14 @@
 const PAGE = 24;
 const phone = "tel:+375256981184";
 const tg = "https://t.me/BudnyakDA";
+const esc = s => String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
 
 let products = [];
 let categories = [];
 let cat = "all";
+let series = "all";
+let model = "all";
+let color = "all";
 let query = "";
 let page = 1;
 
@@ -20,15 +24,77 @@ function money(n) {
   return x.toFixed(2).replace(".", ",") + " BYN";
 }
 
+function pageSize() {
+  return series === "Vela Eco" ? 48 : PAGE;
+}
+
+function ecoProducts() {
+  return products.filter(p => p.series === "Vela Eco");
+}
+
 function filtered() {
   const q = query.trim().toLowerCase();
-  return products.filter(p => {
+  let items = products.filter(p => {
     if (cat !== "all" && p.category !== cat) return false;
+    if (series !== "all" && p.series !== series) return false;
+    if (model !== "all" && p.model !== model) return false;
+    if (color !== "all" && p.color !== color) return false;
     if (!q) return true;
-    return (p.name || "").toLowerCase().includes(q) ||
-      String(p.article || "").toLowerCase().includes(q) ||
-      String(p.id).includes(q);
+    return [p.name, p.article, p.id, p.model, p.color, p.series, p.category]
+      .join(" ").toLowerCase().includes(q);
   });
+  if (series === "Vela Eco") {
+    items = items.slice().sort((a, b) => {
+      const byModel = String(a.model || "").localeCompare(String(b.model || ""), "ru");
+      if (byModel) return byModel;
+      if (!!a.clearance !== !!b.clearance) return a.clearance ? 1 : -1;
+      return String(a.color || "").localeCompare(String(b.color || ""), "ru");
+    });
+  }
+  return items;
+}
+
+function chip(label, active, attr) {
+  return `<button type="button" class="chip${active ? " is-active" : ""}" aria-pressed="${active ? "true" : "false"}" ${attr}>${esc(label)}</button>`;
+}
+
+function renderSeries() {
+  const eco = ecoProducts();
+  const models = new Set(eco.map(p => p.model));
+  const clearance = eco.filter(p => p.clearance).length;
+  const regular = eco.length - clearance;
+  document.getElementById("series-btns").innerHTML = [
+    chip("Все товары", series === "all", 'data-series="all"'),
+    chip(`Vela Eco · ${eco.length}`, series === "Vela Eco", 'data-series="Vela Eco"')
+  ].join("");
+  const lead = document.getElementById("series-lead");
+  if (series === "Vela Eco") {
+    lead.textContent = `Vela Eco: ${models.size} моделей, ${regular} обычных артикулов и ${clearance} уценка. Цены розничные, BYN. Наличие — склад поставщика на 07.11.2026, это не полка павильона 73. Линейка Vela Prima сюда не входит.`;
+  } else {
+    lead.textContent = `Полная серия раздельных ручек Vela Eco: ${models.size} моделей, ${regular} артикулов и ${clearance} уценка. Откройте фильтр, чтобы смотреть только её.`;
+  }
+  const modelHost = document.getElementById("model-btns");
+  const colorHost = document.getElementById("color-btns");
+  const search = document.getElementById("q");
+  if (search) search.placeholder = series === "Vela Eco" ? "Поиск внутри серии Vela Eco…" : "Поиск по названию или артикулу…";
+  if (series !== "Vela Eco") { modelHost.innerHTML = ""; colorHost.innerHTML = ""; return; }
+  const modelNames = [...models].sort((a, b) => String(a).localeCompare(String(b), "ru"));
+  modelHost.innerHTML = [
+    chip("Все модели", model === "all", 'data-model="all"'),
+    ...modelNames.map(name => {
+      const n = eco.filter(p => p.model === name).length;
+      return chip(`${name} · ${n}`, model === name, `data-model="${esc(name)}"`);
+    })
+  ].join("");
+  const pool = model === "all" ? eco : eco.filter(p => p.model === model);
+  const colors = [...new Set(pool.map(p => p.color))].sort((a, b) => String(a).localeCompare(String(b), "ru"));
+  colorHost.innerHTML = [
+    chip("Все цвета", color === "all", 'data-color="all"'),
+    ...colors.map(name => {
+      const n = pool.filter(p => p.color === name).length;
+      return chip(`${name} · ${n}`, color === name, `data-color="${esc(name)}"`);
+    })
+  ].join("");
 }
 
 function renderCats() {
@@ -42,29 +108,137 @@ function renderCats() {
   catsEl.querySelectorAll(".cat-btn").forEach(btn => {
     btn.addEventListener("click", () => {
       cat = btn.dataset.cat;
+      series = "all";
+      model = "all";
+      color = "all";
       page = 1;
+      if (location.hash === "#vela-eco") history.replaceState(null, "", location.pathname + location.search);
       render();
     });
   });
 }
 
-function card(p) {
+function orderLabel(p) {
+  const art = p.article || "";
+  return p.name + (art ? " (арт. " + art + ")" : "") + " — " + money(p.price);
+}
+
+function bindImgError(img) {
+  img.addEventListener("error", () => {
+    const d = document.createElement("div");
+    d.className = "no-photo";
+    d.textContent = "Фото недоступно";
+    img.replaceWith(d);
+  });
+}
+
+function supplierText(p) {
+  if (p.supplier_availability === "Нет в наличии") {
+    return `<p class="status status-out">У поставщика: нет в наличии. Последняя розничная цена сохранена.</p>`;
+  }
+  const label = p.supplier_availability === "Есть на складе" ? "есть на складе" : p.supplier_availability;
+  return `<p class="status status-ok">У поставщика: ${esc(label)}.</p>`;
+}
+
+function velaCard(p) {
   const href = p.url || "#contacts";
-  return `<article class="card">
-    <a class="img" href="${href}" target="_blank" rel="noopener">
-      <img src="${p.image}" alt="${p.name.replace(/"/g, "&quot;")}" loading="lazy" width="240" height="240">
-    </a>
-    <small>${p.category || ""}</small>
-    <h3><a href="${href}" target="_blank" rel="noopener">${p.name}</a></h3>
+  const spindle = (p.specifications || {})["Длина квадрата"] || "";
+  const photo = p.image
+    ? `<button type="button" class="img-btn more-btn" data-id="${esc(p.id)}"><img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" width="320" height="320"></button>`
+    : `<div class="no-photo">Фото недоступно</div>`;
+  const clearance = p.clearance
+    ? `<p class="warn">${esc(p.description || "Уценка")} Длина квадрата: ${esc(spindle)}.</p>`
+    : (p.description ? "" : `<p class="warn">Описание у поставщика не опубликовано.</p>`);
+  return `<article class="card card-vela" data-sku="${esc(p.article)}" data-series="Vela Eco" data-model="${esc(p.model)}" data-color="${esc(p.color)}">
+    ${photo}
+    <small>Vela Eco · ${esc(p.category || "")}</small>
+    <h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.name)}</a></h3>
+    <p class="meta">Модель ${esc(p.model)} · ${esc(p.color)} · арт. ${esc(p.article)}</p>
+    ${clearance}
+    ${supplierText(p)}
+    <p class="status">Павильон 73: не проверено.</p>
     <div class="row">
-      <b>${money(p.price)}</b>
-      <button type="button" class="btn sm order-btn" data-name="${p.name.replace(/"/g, '&quot;')}">Заказать</button>
+      <b class="price">${money(p.price)}</b>
+      <button type="button" class="btn sm order-btn" data-name="${esc(orderLabel(p))}">Заказать</button>
     </div>
     <div class="links">
-      <a href="${href}" target="_blank" rel="noopener">Описание товара</a>
+      <button type="button" class="btn sm more-btn" data-id="${esc(p.id)}">Характеристики</button>
+      <a href="${esc(href)}" target="_blank" rel="noopener">Сайт поставщика</a>
+    </div>
+  </article>`;
+}
+
+function card(p) {
+  if (p.series === "Vela Eco") return velaCard(p);
+  const href = p.url || "#contacts";
+  return `<article class="card" data-sku="${esc(p.article || "")}">
+    <a class="img" href="${esc(href)}" target="_blank" rel="noopener">
+      <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240">
+    </a>
+    <small>${esc(p.category || "")}</small>
+    <h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.name)}</a></h3>
+    <div class="row">
+      <b class="price">${money(p.price)}</b>
+      <button type="button" class="btn sm order-btn" data-name="${esc(orderLabel(p))}">Заказать</button>
+    </div>
+    <div class="links">
+      <a href="${esc(href)}" target="_blank" rel="noopener">Описание товара</a>
       <a href="${tg}" target="_blank" rel="noopener">Telegram</a>
     </div>
   </article>`;
+}
+
+function detailHtml(p) {
+  const specs = p.specifications || {};
+  const spindle = specs["Длина квадрата"] || "";
+  const rose = specs["Материал внутренней розетки"] || "";
+  const gallery = (p.gallery && p.gallery.length ? p.gallery : (p.image ? [{ src: p.image, alt: p.name, kind: "product" }] : []))
+    .map(g => `<figure><img src="${esc(g.src)}" alt="${esc(g.alt || p.name)}"><figcaption>${g.kind === "pack" ? "Упаковка. Цвет ручки на этом фото не виден." : "Фото этого артикула с сайта поставщика."}</figcaption></figure>`)
+    .join("") || `<div class="no-photo">Фото недоступно</div>`;
+  let about;
+  if (p.clearance) {
+    about = `<p class="warn">${esc(p.description || "Уценка.")} Длина квадрата: ${esc(spindle)}. Материал внутренней розетки: ${esc(rose)}.</p>`;
+  } else if (p.description) {
+    about = `<h4>Описание поставщика</h4><p>${esc(p.description)}</p>`;
+  } else {
+    about = `<p class="warn">Описание у поставщика не опубликовано. Текст не добавлен.</p>`;
+  }
+  const rows = Object.entries(specs).map(([k, v]) => `<tr><th scope="row">${esc(k)}</th><td>${esc(v)}</td></tr>`).join("");
+  return `<p class="pdp-price">${money(p.price)}</p>
+    <p>Модель ${esc(p.model)} · цвет ${esc(p.color)} · арт. ${esc(p.article)}</p>
+    <p>Серия Vela Eco, раздел поставщика vela-standart, сверено 07.11.2026. Это не линейка Vela Prima.</p>
+    ${supplierText(p)}
+    <p class="status">Павильон 73: не проверено. Заказ нужен, чтобы уточнить витрину.</p>
+    ${about}
+    ${p.spec_color_note ? `<p class="warn">${esc(p.spec_color_note)}</p>` : ""}
+    <div class="pdp-gallery">${gallery}</div>
+    <table class="specs"><caption>Характеристики со страницы поставщика</caption><tbody>${rows}</tbody></table>
+    <div class="pdp-actions">
+      <button type="button" class="btn order-btn" data-name="${esc(orderLabel(p))}">Заказать</button>
+      <a class="btn ghost dark" href="${esc(p.url)}" target="_blank" rel="noopener">Сайт поставщика</a>
+    </div>`;
+}
+
+let pdpReturn = null;
+function openDetail(id) {
+  const p = products.find(x => String(x.id) === String(id));
+  if (!p) return;
+  pdpReturn = document.activeElement;
+  document.getElementById("pdp-title").textContent = p.name;
+  document.getElementById("pdp-body").innerHTML = detailHtml(p);
+  const box = document.getElementById("pdp");
+  box.hidden = false;
+  document.getElementById("pdp-close").focus();
+  box.querySelectorAll(".order-btn").forEach(btn => {
+    btn.addEventListener("click", () => { closeDetail(); openOrder(btn.dataset.name); });
+  });
+  box.querySelectorAll("img").forEach(bindImgError);
+}
+function closeDetail() {
+  const box = document.getElementById("pdp");
+  if (!box || box.hidden) return;
+  box.hidden = true;
+  if (pdpReturn && pdpReturn.focus) pdpReturn.focus();
 }
 
 function renderPager(totalPages) {
@@ -85,17 +259,18 @@ function renderPager(totalPages) {
 
 function render() {
   renderCats();
+  renderSeries();
+  const size = pageSize();
   const items = filtered();
-  const totalPages = Math.max(1, Math.ceil(items.length / PAGE));
+  const totalPages = Math.max(1, Math.ceil(items.length / size));
   if (page > totalPages) page = totalPages;
-  const slice = items.slice((page - 1) * PAGE, page * PAGE);
+  const slice = items.slice((page - 1) * size, page * size);
+  listEl.classList.toggle("series-on", series === "Vela Eco");
   listEl.innerHTML = slice.length ? slice.map(card).join("") :
     `<p class="empty">Ничего не найдено. Попробуйте другой запрос или <a href="${phone}">позвоните</a>.</p>`;
-  countEl.textContent = `Показано ${slice.length ? ((page - 1) * PAGE + 1) : 0}–${(page - 1) * PAGE + slice.length} из ${items.length}`;
+  countEl.textContent = `Показано ${slice.length ? ((page - 1) * size + 1) : 0}–${(page - 1) * size + slice.length} из ${items.length}`;
   renderPager(totalPages);
-  listEl.querySelectorAll(".order-btn").forEach(btn => {
-    btn.addEventListener("click", () => openOrder(btn.dataset.name));
-  });
+  listEl.querySelectorAll("img").forEach(bindImgError);
 }
 
 function openOrder(productName) {
@@ -138,6 +313,7 @@ if (location.hash === "#order-sent") {
 
 qEl.addEventListener("input", () => {
   query = qEl.value;
+  if (query.trim()) { model = "all"; color = "all"; }
   page = 1;
   render();
 });
@@ -145,16 +321,23 @@ qEl.addEventListener("input", () => {
 /* Прайс-лист */
 const PPAGE = 50;
 let price = [], pq = "", pstock = false, ppage = 1;
-const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+function priceAvailability(x) {
+  if (x.series === "Vela Eco") {
+    return x.s
+      ? '<span class="pa note">У поставщика: есть на складе. Павильон 73: не проверено.</span>'
+      : '<span class="pa note"><span class="no">У поставщика: нет в наличии.</span> Последняя розничная цена сохранена. Павильон 73: не проверено.</span>';
+  }
+  return x.s ? "" : ' · <span class="no">нет в наличии</span>';
+}
 function renderPrice() {
   const q = pq.trim().toLowerCase();
-  const items = price.filter(x => (!pstock || x.s) && (!q || x.n.toLowerCase().includes(q) || x.a.toLowerCase().includes(q) || String(x.id) === q));
+  const items = price.filter(x => (!pstock || x.s) && (!q || x.n.toLowerCase().includes(q) || String(x.a || "").toLowerCase().includes(q) || String(x.id) === q || String(x.series || "").toLowerCase().includes(q)));
   const tp = Math.max(1, Math.ceil(items.length / PPAGE));
   if (ppage > tp) ppage = tp;
   const sl = items.slice((ppage - 1) * PPAGE, ppage * PPAGE);
   const el = document.getElementById("plist");
-  el.innerHTML = sl.length ? sl.map(x => `<div class="prow">
-    <div class="pn">${esc(x.n)}<span class="pa">Арт. ${esc(x.a || "—")} · код ${x.id}${x.s ? "" : ' · <span class="no">нет в наличии</span>'}</span></div>
+  el.innerHTML = sl.length ? sl.map(x => `<div class="prow" data-sku="${esc(x.a || "")}" data-series="${esc(x.series || "")}">
+    <div class="pn">${esc(x.n)}<span class="pa">Арт. ${esc(x.a || "—")} · код ${x.id}${x.series === "Vela Eco" ? "" : priceAvailability(x)}</span>${x.series === "Vela Eco" ? priceAvailability(x) : ""}</div>
     <div class="pp"><small>Розничная цена</small>${money(x.p)}</div>
     <button type="button" class="btn sm porder" data-name="${esc(x.n + (x.a ? " (арт. " + x.a + ")" : "") + " — " + money(x.p))}">Заказать</button>
   </div>`).join("") : `<p class="empty">Ничего не найдено.</p>`;
@@ -185,9 +368,66 @@ Promise.all([
 ]).then(([p, c]) => {
   products = p;
   categories = c;
+  if (location.hash === "#vela-eco") {
+    series = "Vela Eco";
+    cat = "all";
+    model = "all";
+    color = "all";
+    page = 1;
+  }
   render();
 }).catch(() => {
   countEl.textContent = "Не удалось загрузить каталог. Обновите страницу.";
+});
+
+listEl.addEventListener("click", e => {
+  const more = e.target.closest(".more-btn");
+  const order = e.target.closest(".order-btn");
+  if (more) openDetail(more.dataset.id);
+  else if (order) openOrder(order.dataset.name);
+});
+document.getElementById("series-btns").addEventListener("click", e => {
+  const b = e.target.closest("button");
+  if (!b) return;
+  if (b.dataset.series === "Vela Eco") {
+    if (location.hash !== "#vela-eco") location.hash = "vela-eco";
+    else if (series !== "Vela Eco") {
+      series = "Vela Eco"; cat = "all"; model = "all"; color = "all"; page = 1; render();
+    }
+    return;
+  }
+  series = "all"; model = "all"; color = "all"; page = 1;
+  if (location.hash === "#vela-eco") history.replaceState(null, "", location.pathname + location.search);
+  render();
+});
+document.getElementById("model-btns").addEventListener("click", e => {
+  const b = e.target.closest("button");
+  if (!b) return;
+  model = b.dataset.model;
+  color = "all";
+  page = 1;
+  render();
+});
+document.getElementById("color-btns").addEventListener("click", e => {
+  const b = e.target.closest("button");
+  if (!b) return;
+  color = b.dataset.color;
+  page = 1;
+  render();
+});
+document.getElementById("pdp-close").addEventListener("click", closeDetail);
+document.getElementById("pdp").addEventListener("click", e => { if (e.target.id === "pdp") closeDetail(); });
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeDetail();
+});
+window.addEventListener("hashchange", () => {
+  if (location.hash !== "#vela-eco") return;
+  series = "Vela Eco";
+  cat = "all";
+  model = "all";
+  color = "all";
+  page = 1;
+  render();
 });
 
 /* ===== Реферальная программа ===== */
