@@ -40,7 +40,7 @@ function filtered() {
     if (model !== "all" && p.model !== model) return false;
     if (color !== "all" && p.color !== color) return false;
     if (!q) return true;
-    return [p.name, p.article, p.id, p.model, p.color, p.series, p.category]
+    return [p.name, p.article, p.id, p.model, p.color, p.series, p.category, p.description]
       .join(" ").toLowerCase().includes(q);
   });
   if (series === "Vela Eco") {
@@ -171,12 +171,14 @@ function velaCard(p) {
 function card(p) {
   if (p.series === "Vela Eco") return velaCard(p);
   const href = p.url || "#contacts";
+  const about = p.description ? `<p class="card-about">${esc(p.description)}</p>` : "";
   return `<article class="card" data-sku="${esc(p.article || "")}">
     <a class="img" href="${esc(href)}" target="_blank" rel="noopener">
       <img src="${esc(p.image)}" alt="${esc(p.name)}" loading="lazy" width="240" height="240">
     </a>
     <small>${esc(p.category || "")}</small>
     <h3><a href="${esc(href)}" target="_blank" rel="noopener">${esc(p.name)}</a></h3>
+    ${about}
     <div class="row">
       <b class="price">${money(p.price)}</b>
       <button type="button" class="btn sm order-btn" data-name="${esc(orderLabel(p))}">Заказать</button>
