@@ -31,7 +31,7 @@ check(len(src_by) == 41, "source dataset is not 41")
 check(sum(1 for p in eco if p.get("clearance")) == 1, "clearance count")
 check(sum(1 for p in eco if not p.get("clearance")) == 40, "regular count")
 check(len({p["model"] for p in eco}) == 21, "model count")
-check(len(products) == 846, f"catalog size {len(products)}")
+check(len(products) == 860, f"catalog size {len(products)}")
 check(len({str(p["article"]) for p in products}) == len(products), "duplicate articles")
 check(len({p["id"] for p in products}) == len(products), "duplicate ids")
 
